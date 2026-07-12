@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #333333;
+  --color-brand-muted: #5A5A5A;
+  --color-brand-bg-card: #FAFAFA;
+}
+
+/* Custom Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Timeline Custom Styles */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, #000000 10%, #000000 90%, transparent);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Outlined Header Text */
+.text-outline {
+  -webkit-text-stroke: 1.5px #000000;
+  color: transparent;
+}
+
+/* Adjust outline for smaller sizes */
+@media (max-width: 640px) {
+  .text-outline {
+    -webkit-text-stroke: 1px #000000;
+  }
+}

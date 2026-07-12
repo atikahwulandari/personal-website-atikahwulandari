@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atikah Wulan Dari's Website</title>
+  <meta name="description" content="Data Analyst Portfolio of Atikah Wulan Dari. Turning complex datasets into clear insights and interactive dashboards.">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-white text-black font-sans antialiased overflow-x-hidden">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Status Capsule -->
+      <div class="flex items-center gap-2 px-3.5 py-1.5 border border-gray-300 rounded-full shadow-inner bg-gray-50/50">
+        <span class="w-2.5 h-2.5 bg-[#66BB6A] rounded-full animate-pulse"></span>
+        <span class="text-xs font-semibold text-brand-secondary">Available for New Opportunities</span>
+      </div>
+      
+      <!-- Nav Links (Desktop) -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#overview" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Overview</a>
+        <a href="#about" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">About</a>
+        <a href="#projects" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Project</a>
+        <a href="#experience" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Experience</a>
+        <a href="#tech-stack" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Tech Stack</a>
+        <a href="#achievements" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Achievements</a>
+        <a href="#organization" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Organization</a>
+        <a href="#contact" class="nav-link text-base font-bold text-brand-muted hover:text-black transition-colors duration-200">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-black focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile Nav Links -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-4 space-y-2">
+      <a href="#overview" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Overview</a>
+      <a href="#about" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">About</a>
+      <a href="#projects" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Project</a>
+      <a href="#experience" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Experience</a>
+      <a href="#tech-stack" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Tech Stack</a>
+      <a href="#achievements" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Achievements</a>
+      <a href="#organization" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Organization</a>
+      <a href="#contact" class="block text-base font-bold text-brand-muted hover:text-black py-1.5 px-3 rounded-lg hover:bg-gray-50">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero / Overview Section -->
+  <section id="overview" class="min-h-screen flex items-center pt-24 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto text-center w-full">
+      <p class="text-2xl sm:text-3xl md:text-4xl font-semibold text-black mb-3">
+        <!-- Hi there styled as Outline -->
+        <span class="text-outline">Hi there,</span> <span class="text-brand-muted">It’s Me</span>
+      </p>
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight text-black mb-4 select-none leading-tight">
+        ATIKAH WULAN DARI
+      </h1>
+      <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-muted mb-6">
+        <span id="overview-role" aria-live="polite">Data Analyst.</span><span aria-hidden="true">|</span>
+      </p>
+      <p class="text-lg sm:text-xl text-black max-w-2xl mx-auto mb-8 leading-relaxed font-normal">
+        Transforming complex data into meaningful insights to support data-driven decisions through interactive and easy-to-understand dashboards.
+      </p>
+      <a href="#projects" class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-brand-secondary text-white text-base font-semibold rounded-full hover:bg-black transition-all duration-300 transform active:scale-95 shadow-md">
+        <span>See My Project</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section (Fit to Page) -->
+  <section id="about" class="py-10 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16 min-h-[90vh] flex flex-col justify-center">
+    <div class="max-w-7xl mx-auto space-y-8 w-full">
+      <div class="text-center">
+        <!-- About Atikah header: "About" Outline, "Atikah" filled -->
+        <h2 class="text-3xl sm:text-4xl font-bold font-sans">
+          <span class="text-outline">About</span> <span class="text-black">Atikah</span>
+        </h2>
+      </div>
+
+      <!-- Education & Lifelong Learner cards -->
+      <div class="flex flex-col gap-3 max-w-7xl mx-auto">
+        
+        <!-- Card 1: Education Summary -->
+        <div class="bg-brand-bg-card rounded-[28px] border border-[#8A8A8A] overflow-hidden flex flex-col md:grid md:grid-cols-[34%_1fr] shadow-sm min-h-[215px]">
+          <div class="h-[220px] md:h-full w-full relative shrink-0">
+            <img src="/public/images/overview/education.png" alt="Education Summary" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-6 sm:p-8 md:px-3 md:py-3 flex flex-col items-start justify-start">
+            <h3 class="text-3xl sm:text-4xl font-bold text-black mb-4 leading-tight">Education Summary</h3>
+            <p class="text-sm sm:text-base text-black leading-snug text-left max-w-[800px]">
+              Graduated with a Bachelor's degree in <b>Information Systems</b> from <b>Sriwijaya University</b>, specializing in <b>Data Analytics</b>. Strengthened practical expertise through course in the field of Data Analyst & AI program. 
+              Actively contributed to leadership and youth development through Community and Organization: <b>Young On Top</b> (City Level) and <b>FASCO</b> (Faculty Level). Demonstrated an entrepreneurial mindset and strategic problem-solving skills by participating Business Plan Competitions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Experiences -->
+        <div class="bg-brand-bg-card rounded-[28px] border border-[#8A8A8A] overflow-hidden flex flex-col md:grid md:grid-cols-[1fr_34%] shadow-sm min-h-[215px]">
+          <div class="p-6 sm:p-8 md:px-5 md:py-5 flex flex-col items-start justify-start order-2 md:order-1">
+            <h3 class="text-3xl sm:text-4xl font-bold text-black mb-4 leading-tight">Experiences</h3>
+            <p class="text-sm sm:text-base text-black leading-snug text-left max-w-[800px]">
+              With <b>over 1.5 years</b> of experience in <b>Data Analyst and Business Intelligence</b>, I specialize in transforming complex data into meaningful insights to support data-driven decisions. 
+              Proficient in <b>Power BI, SQL, Python, Excel,</b> and other analytics tools, with a passion for delivering analytical solutions that drive strategic decision-making. 
+              Always open to collaboration, new opportunities, and challenges that foster continuous learning and professional growth.
+            </p>
+          </div>
+          <div class="h-[220px] md:h-full w-full relative shrink-0 order-1 md:order-2">
+            <img src="/public/images/overview/about.jpg" alt="A Lifelong Learner" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Atikah's</span> <span class="text-black">Project</span>
+        </h2>
+      </div>
+
+      <!-- Projects Grid (3-column compact) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        
+        <!-- Project 1: Property Dashboard -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/1. Property Dashboard.png" alt="Property Dashboard" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Property Dashboard</h3>
+                <div class="flex gap-1 px-2.5 py-1 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="property">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                An interactive property valuation and trend analysis dashboard designed to analyze market fluctuations, geographical pricing factors, and real estate investment yields.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[10px] font-semibold text-black mb-2">Tech Stack:</p>
+                <div class="flex gap-2">
+                  <!-- Power BI -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                    <img src="/public/images/techStack/PowerBI.png" alt="Power BI" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+
+                  <!-- Python -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Python">
+                    <img src="/public/images/techStack/Python.png" alt="Python" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Salary Dashboard -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/2. Salary Dashboard.png" alt="Salary Dashboard" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Salary Dashboard</h3>
+                <div class="flex gap-1.5 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="salary">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                Collected job market data from JobStreet using web scraping techniques and developed an interactive dashboard to analyze average salaries across industries and occupational categories in Indonesia.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                <div class="flex gap-2">
+                  <!-- Power BI -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                    <img src="/public/images/techStack/PowerBI.png" alt="Power BI" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+
+                  <!-- Python -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Python">
+                    <img src="/public/images/techStack/Python.png" alt="Python" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Material Price Dashboard -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/3. Material Price Dashboard.png" alt="Material Price Dashboard" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Material Price Dashboard</h3>
+                <div class="flex gap-1.5 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="material">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                Developed a Business Intelligence dashboard that transforms batch data from the Ministry of Trade's SP2KP system into actionable insights for monitoring essential commodity price trends and market fluctuations.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                <!-- Power BI -->
+                <div class="flex gap-2">
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                    <img src="/public/images/techStack/PowerBI.png" alt="Power BI" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+
+                  <!-- Excel -->
+                <div class="flex gap-2">
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Excel">
+                    <img src="/public/images/techStack/Excel.png" alt="Excel" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Project 4: Weather Dashboard -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/4. Weather Dashboard.png" alt="Weather Dashboard" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Weather Dashboard</h3>
+                <div class="flex gap-1.5 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="weather">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                Built an interactive weather analytics dashboard that visualizes current weather conditions and forecast data through seamless integration with the Weather API.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                <div class="flex gap-2">
+                  <!-- Power BI -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                    <img src="/public/images/techStack/PowerBI.png" alt="Power BI" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Personal Financial Tracker -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/5. Financial Tracker Dashboard.png" alt="Personal Financial Tracker" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Financial Tracker</h3>
+                <div class="flex gap-1.5 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="finance">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                Developed an interactive financial management dashboard that enables users to track income, expenses, savings, and overall financial performance through real-time data input.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                <div class="flex gap-2">
+                  <!-- Excel -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Excel">
+                    <img src="/public/images/techStack/Excel.png" alt="Excel" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Project 6: College Fee Analysis -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[180px] relative overflow-hidden bg-gray-100">
+            <img src="/public/images/portfolio/6. College Fee Classification.png" alt="College Fee Analysis" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-3">
+                <h3 class="text-lg font-bold text-black leading-tight">Classification Model for College Fee Determination</h3>
+                <div class="flex gap-1.5 shrink-0">
+                  <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0">
+                    <span>Open Here</span>
+                  </a>
+                  <button class="project-details-btn inline-flex items-center gap-1 px-2.5 py-1 bg-brand-secondary text-white text-[10px] font-semibold rounded-md hover:bg-black transition-colors shrink-0" data-project="college">
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-xs text-black mb-4 leading-relaxed">
+                Developed a predictive classification model to support the determination of tuition fee categories for prospective students.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-gray-200/50 pt-3">
+                <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                <div class="flex gap-2">
+                  <!-- RapidMiner -->
+                  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Rapid Miner">
+                    <img src="/public/images/techStack/RapidMiner.png" alt="Rapid Miner" class="w-6 h-6 object-contain mb-0.5 group-hover:scale-110 transition-transform">                    <!-- <svg class="w-3.5 h-3.5 text-[#3776AB]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18c-.98.2-1.9.47-2.5.83-.98.58-1.64 1.34-1.9 2.45-.44 1.83-.16 3.1.58 3.52.4.24.96.38 1.48.4h4.48c1.47 0 2.87.88 3.32 2.3.4 1.25.13 2.8-.75 3.58-.67.6-1.57.87-2.85.87h-1.5v1.5c0 1.28-.27 2.18-.87 2.85-.78.88-2.33 1.15-3.58.75-1.42-.45-2.3-1.85-2.3-3.32v-4.48c-.02-.52-.16-1.08-.4-1.48-.42-.74-1.69-1.02-3.52-.58-1.11.26-1.87.92-2.45 1.9-.36.6-.63 1.52-.83 2.5-.2.98-.36 2.03-.36 3.03s.16 2.05.36 3.03c.2.98.47 1.9.83 2.5.58.98 1.34 1.64 2.45 1.9 1.83.44 3.1.16 3.52-.58.24-.4.38-.96.4-1.48v-4.48c0-1.47.88-2.87 2.3-3.32 1.25-.4 2.8-.13 3.58.75.6.67.87 1.57.87 2.85v1.5h1.5c1.28 0 2.18.27 2.85.87.88.78 1.15 2.33.75 3.58-.45 1.42-1.85 2.3-3.32 2.3h-4.48c-.52.02-1.08.16-1.48.4-.74.42-1.02 1.69-.58 3.52.26 1.11.92 1.87 1.9 2.45.6.36 1.52.63 2.5.83.98.2 2.03.36 3.03.36s2.05-.16 3.03-.36z"/></svg> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-12 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Atikah's</span> <span class="text-black">Experience</span>
+        </h2>
+      </div>
+
+      <!-- Timeline Wrapper -->
+      <div class="relative max-w-5xl mx-auto">
+        <!-- Vertical Timeline Line (Thicker & Blacker) -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[3px] bg-black hidden md:block"></div>
+
+        <!-- Experience Items -->
+        <div class="space-y-10 md:space-y-16">
+          
+          <!-- Experience 1 (Left Side) -->
+          <div class="flex flex-col md:flex-row items-center md:justify-between relative">
+            <div class="w-full md:w-[45%] order-2 md:order-1">
+              <div class="bg-brand-bg-card rounded-[30px] border border-brand-muted overflow-hidden flex flex-col sm:flex-row items-stretch shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="w-full sm:w-2/5 min-h-[140px] sm:min-h-0 bg-gray-100 relative shrink-0">
+                  <img src="/public/images/experiences/SERA.jpeg" alt="PT. Serasi Autoraya" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                  <div>
+                    <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Jan 2026 - Jun 2026</span>
+                    <h3 class="text-lg font-bold text-black mb-0.5">Business Intelligence</h3>
+                    <p class="text-xs font-semibold text-black mb-1">PT. Serasi Autoraya (ASTRA Group)</p>
+                    <p class="text-[11px] text-black leading-relaxed mb-3">
+                      Developed interactive dashboards that provide insights into revenue performance and fleet monitoring.
+                    </p>
+
+                  <div class="flex items-center gap-1 text-[11px] text-black mb-1">
+                      <img src="/public/images/location_icon.png" alt="Location" class="w-4 h-4">
+                      <span>North Jakarta, DKI Jakarta</span>
+                  </div>
+                  </div>
+                  <div>
+                    <div class="border-t border-gray-200/50 pt-2">
+                      <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                      <div class="flex gap-2">
+                        <!-- Power BI -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                          <img src="/public/images/techStack/PowerBI.png" alt="PowerBI" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+          
+                        <!-- Azure Databricks -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Azure Databricks">
+                          <img src="/public/images/techStack/AzureDatabricks.png" alt="Databricks" class="w-10 h-10 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+
+                        <!-- Excel -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Excel">
+                          <img src="/public/images/techStack/Excel.png" alt="Excel" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Timeline Center Node (Styled with Gray Border and Shadow Highlight) -->
+            <div class="absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full border-4 border-gray-300 bg-black shadow-lg ring-4 ring-gray-100/80 z-10 hidden md:block"></div>
+            <div class="w-full md:w-[45%] order-1 md:order-2 mb-4 md:mb-0"></div>
+          </div>
+
+          <!-- Experience 2 (Right Side) -->
+          <div class="flex flex-col md:flex-row items-center md:justify-between relative">
+            <div class="w-full md:w-[45%] order-1"></div>
+            <!-- Timeline Center Node (Styled with Gray Border and Shadow Highlight) -->
+            <div class="absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full border-4 border-gray-300 bg-black shadow-lg ring-4 ring-gray-100/80 z-10 hidden md:block"></div>
+            <div class="w-full md:w-[45%] order-2">
+              <div class="bg-brand-bg-card rounded-[30px] border border-brand-muted overflow-hidden flex flex-col sm:flex-row items-stretch shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="w-full sm:w-2/5 min-h-[140px] sm:min-h-0 bg-gray-100 relative shrink-0">
+                  <img src="/public/images/experiences/SCN.jpeg" alt="Data Analyst" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                  <div>
+                    <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Jan 2025 - Jan 2026</span>
+                    <h3 class="text-lg font-bold text-black mb-0.5">Data Analyst</h3>
+                    <p class="text-xs font-semibold text-black mb-1">PT. Sarana Citranusa Kabil</p>
+                    
+                    <p class="text-[11px] text-black leading-relaxed mb-3">
+                      Analyzed manpower requirements to improve operational cost efficiency and developed a web-based solution to streamline revenue tracking and documentation processes.
+                    </p>
+                    <div class="flex items-center gap-1 text-[11px] text-black mb-2">
+                      <img src="/public/images/location_icon.png" alt="Location" class="w-4 h-4">
+                      <span>Batam, Kepulauan Riau</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border-t border-gray-200/50 pt-2">
+                      <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                      <div class="flex gap-2">
+                        <!-- Power BI -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Power BI">
+                          <img src="/public/images/techStack/PowerBI.png" alt="PowerBI" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+
+                        <!-- Excel -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Excel">
+                          <img src="/public/images/techStack/Excel.png" alt="Excel" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+
+                        <!-- Figma -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Figma">
+                          <img src="/public/images/techStack/Figma.png" alt="Figma" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+
+                        <!-- UML -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="UML">
+                          <img src="/public/images/techStack/UML.png" alt="UML" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 (Left Side) -->
+          <div class="flex flex-col md:flex-row items-center md:justify-between relative">
+            <div class="w-full md:w-[45%] order-2 md:order-1">
+              <div class="bg-brand-bg-card rounded-[30px] border border-brand-muted overflow-hidden flex flex-col sm:flex-row items-stretch shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="w-full sm:w-2/5 min-h-[140px] sm:min-h-0 bg-gray-100 relative shrink-0">
+                  <img src="/public/images/experiences/KAI.png" alt="Data Consultant" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                  <div>
+                    <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Dec 2022 - Jan 2023</span>
+                    <h3 class="text-lg font-bold text-black mb-0.5">System Analyst</h3>
+                    <p class="text-xs font-semibold text-black mb-1">PT. Kereta Api Indonesia Divre III</p>
+                    <p class="text-[11px] text-black leading-relaxed mb-3">
+                      Analyzed business requirements and translated them into UML system models, then designed a responsive web interface for an IT Division Equipment Checklist system.
+                    </p>
+                    <div class="flex items-center gap-1 text-[10px] text-black mb-2">
+                      <img src="/public/images/location_icon.png" alt="Location" class="w-4 h-4">
+                      <span>Palembang, South Sumatra</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border-t border-gray-200/50 pt-2">
+                      <p class="text-[12px] font-semibold text-black mb-2">Tech Stack:</p>
+                      <div class="flex gap-2">
+                        <!-- SQL -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="SQL">
+                          <img src="/public/images/techStack/SQL.png" alt="SQL" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+                        
+                        <!-- Figma -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="Figma">
+                          <img src="/public/images/techStack/Figma.png" alt="Figma" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+
+                        <!-- UML -->
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm" title="UML">
+                          <img src="/public/images/techStack/UML.png" alt="UML" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Timeline Center Node (Styled with Gray Border and Shadow Highlight) -->
+            <div class="absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full border-4 border-gray-300 bg-black shadow-lg ring-4 ring-gray-100/80 z-10 hidden md:block"></div>
+            <div class="w-full md:w-[45%] order-1 md:order-2 mb-4 md:mb-0"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section (Fit to Page) -->
+  <section id="tech-stack" class="py-10 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Tech</span> <span class="text-black">Stack</span>
+        </h2>
+      </div>
+
+      <!-- Pyramid Tech Stack Grid (1-2-3-4-5) -->
+      <div class="w-full max-w-3xl flex flex-col gap-4 items-center">
+        
+        <!-- Row 1: 1 item -->
+        <div class="flex justify-center">
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Power BI">
+            <img src="/public/images/techStack/PowerBI.png" alt="Power BI" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Power BI</span>
+          </div>
+        </div>
+
+        <!-- Row 2: 2 items -->
+        <div class="flex justify-center gap-4">
+          <!-- SQL -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="SQL">
+            <img src="/public/images/techStack/SQL.png" alt="SQL" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">SQL</span>
+          </div>
+          <!-- Excel -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Excel">
+            <img src="/public/images/techStack/Excel.png" alt="Excel" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Excel</span>
+          </div>
+        </div>
+
+        <!-- Row 3: 3 items -->
+        <div class="flex justify-center gap-4">
+          <!-- Python -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Python">
+            <img src="/public/images/techStack/Python.png" alt="Python" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Python</span>
+          </div>
+          <!-- Azure Databricks -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Azure Databricks">
+            <img src="/public/images/techStack/AzureDatabricks.png" alt="Azure Databricks" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Azure Databricks</span>
+          </div>
+          <!-- Looker -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Data Studio">
+            <img src="/public/images/techStack/DataStudio.png" alt="Data Studio" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Data Studio</span>
+          </div>
+        </div>
+
+        <!-- Row 4: 4 items -->
+        <div class="flex justify-center gap-4">
+          <!-- Jupyter -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Jupyter Notebook">
+            <img src="/public/images/techStack/Jupyter.png" alt="Jupyter" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Jupyter</span>
+          </div>
+          <!-- SPSS -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="SPSS">
+            <img src="/public/images/techStack/spss.jpeg" alt="SPSS" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">SPSS</span>
+          </div>
+          <!-- Smart PLS -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Smart PLS">
+            <img src="/public/images/techStack/smartpls.jpeg" alt="Smart PLS" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Smart PLS</span>
+          </div>
+          <!-- RapidMiner -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Rapid Miner">
+            <img src="/public/images/techStack/RapidMiner.png" alt="Rapid Miner" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Rapid Miner</span>
+          </div>
+        </div>
+
+        <!-- Row 5: 5 items -->
+        <div class="flex justify-center gap-4">
+          <!-- HTML5 -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="HTML5">
+            <img src="/public/images/techStack/HTML.jpeg" alt="HTML5" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">HTML5</span>
+          </div>
+          <!-- UML -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="UML">
+            <img src="/public/images/techStack/UML.png" alt="UML" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">UML</span>
+          </div>
+          <!-- Big Query -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="BigQuery">
+            <img src="/public/images/techStack/BigQuery.png" alt="BigQuery" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Big Query</span>
+          </div>
+          <!-- Figma -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="Figma">
+            <img src="/public/images/techStack/Figma.png" alt="Figma" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">Figma</span>
+          </div>
+          <!-- VSCode -->
+          <div class="flex flex-col items-center justify-center w-20 h-20 bg-brand-bg-card rounded-2xl border border-[#5A5A5A]/30 hover:border-black transition-all hover:scale-105 shadow-sm cursor-default group" title="VSCode">
+            <img src="/public/images/techStack/VSCode.png" alt="VSCode" class="w-7 h-7 object-contain mb-0.5 group-hover:scale-110 transition-transform">
+            <span class="text-[10px] font-semibold text-brand-secondary">VSCode</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section (Fit to Page) -->
+  <section id="achievements" class="py-10 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Atikah's</span> <span class="text-black">Achievements</span>
+        </h2>
+      </div>
+
+      <!-- Grid of 3 Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <!-- Achievement 1 -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[140px] relative bg-gray-100 overflow-hidden">
+            <img src="/public/images/achievements/1. First Winner BPC.png" alt="Techporia Winner" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between relative bg-brand-bg-card rounded-b-[40px] border-t border-brand-muted/20">
+            <!-- Centered Badge -->
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-secondary text-white text-[12px] font-semibold rounded-md shadow-md whitespace-nowrap">
+              First Place
+            </div>
+            
+            <div class="mt-2">
+              <h3 class="text-sm font-bold text-black mb-0.5 leading-snug">Business Plan Competition at Faculty Level</h3>
+              <p class="text-[12px] font-semibold text-black mb-2">Techporia by BEM Fasilkom Unsri - 2022</p>
+              <p class="text-[11px] text-black leading-relaxed">
+                Served as Team Leader in developing GoRoe, a private tutoring service platform designed to improve access to personalized education.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[140px] relative bg-gray-100 overflow-hidden">
+            <img src="/public/images/achievements/2. Second Winner BPC.png" alt="National Hackathon" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between relative bg-brand-bg-card rounded-b-[40px] border-t border-brand-muted/20">
+            <!-- Centered Badge -->
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-secondary text-white text-[12px] font-semibold rounded-md shadow-md whitespace-nowrap">
+              Second Place
+            </div>
+            
+            <div class="mt-2">
+              <h3 class="text-sm font-bold text-black mb-0.5 leading-snug">Business Plan Competition at National Level</h3>
+              <p class="text-[12px] font-semibold text-black mb-2">BEM FEB Universitas Jambi - 2021</p>
+              <p class="text-[11px] text-black leading-relaxed">
+                Served as Team Leader in developing a web-based culinary learning platform that provides step-by-step cooking tutorials through instructional videos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="h-[140px] relative bg-gray-100 overflow-hidden">
+            <img src="/public/images/achievements/3. Third Winner BPC.png" alt="Case Study Winner" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between relative bg-brand-bg-card rounded-b-[40px] border-t border-brand-muted/20">
+            <!-- Centered Badge -->
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-secondary text-white text-[12px] font-semibold rounded-md shadow-md whitespace-nowrap">
+              Third Place
+            </div>
+            
+            <div class="mt-2">
+              <h3 class="text-sm font-bold text-black mb-0.5 leading-snug">Business Plan Competition at National Level</h3>
+              <p class="text-[12px] font-semibold text-black mb-2">Pesta Ilmiah Sriwijaya - 2021</p>
+              <p class="text-[11px] text-black leading-relaxed">
+                Web-based education platform that provides learning materials, exam preparation resources, and educational insights to help students prepare for public university admissions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization Section -->
+  <section id="organization" class="py-12 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Atikah's</span> <span class="text-black">Organization</span>
+        </h2>
+      </div>
+
+      <!-- Two static cards and one large slider card -->
+      <div class="space-y-8 max-w-5xl mx-auto">
+        <!-- Static Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm relative">
+            <div class="h-[180px] relative bg-gray-100 overflow-hidden">
+              <img src="/public/images/organizations/1. Fasco.png" alt="Fasilkom Science Community" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 relative bg-brand-bg-card rounded-b-[40px] border-t border-brand-muted/20">
+              <!-- Center Aligned Title Badge -->
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-secondary text-white text-[12px] font-semibold rounded-md shadow-md whitespace-nowrap">
+                Secretary Department HRD
+              </div>
+              <div class="mt-2">
+                <h3 class="text-base font-bold text-black mb-0.5">Fasilkom Science Community (FASCO)</h3>
+                <p class="text-[11px] font-semibold text-black mb-3">Faculty Level - 2021</p>
+                <p class="text-xs text-black leading-relaxed">
+                  Coordinated member activities, organized evaluation meetings, documented meeting minutes, and supported continuous improvement initiatives for organizational projects.                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm relative">
+            <div class="h-[180px] relative bg-gray-100 overflow-hidden">
+              <img src="/public/images/organizations/2. YoT.png" alt="Young on Top" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 relative bg-brand-bg-card rounded-b-[40px] border-t border-brand-muted/20">
+              <!-- Center Aligned Title Badge -->
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-secondary text-white text-[12px] font-semibold rounded-md shadow-md whitespace-nowrap">
+                Catalyst Staff
+              </div>
+              <div class="mt-2">
+                <h3 class="text-base font-bold text-black mb-0.5">Young on Top (YoT)</h3>
+                <p class="text-[11px] font-semibold text-black mb-3">City Level - 2022</p>
+                <p class="text-xs text-black leading-relaxed">
+                  Served as Co-Leader by coordinating volunteer teaching activities at an orphanage, managing weekly mentor schedules, and facilitating monthly evaluation sessions to continuously improve program effectiveness.                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sliding Photo Carousel (Card 3) -->
+        <div class="relative bg-brand-bg-card rounded-[40px] border border-brand-muted overflow-hidden shadow-sm h-[450px]">
+          
+          <!-- Slide Container (Full Bleed Background Images) -->
+          <div class="relative w-full h-full overflow-hidden">
+
+            <!-- Slide 1 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/2.jpg" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Secretary HRD</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">Sharing Program by FASCO</h3>
+              </div>
+            </div>
+            
+            <!-- Slide 2 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/1.JPG" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Co-Leader</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">Catalyst Program</h3>
+              </div>
+            </div>
+
+            
+
+            <!-- Slide 3 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/3.jpg" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Catalyst Staff</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">YoT's Recruitment</h3>
+              </div>
+            </div>
+
+            <!-- Slide 4 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/5.JPG" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Catalyst Staff</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">YoT's Donation Program</h3>
+              </div>
+            </div>
+
+            <!-- Slide 5 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/6.jpg" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">HRD Department</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">FASCO's Gathering</h3>
+              </div>
+            </div>
+
+            <!-- Slide 6 (Full photo background with text overlay) -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-all duration-500 opacity-100 scale-100 flex flex-col justify-end bg-black">
+              <img src="/public/images/organizations/carousel/10.jpg" alt="Catalyst Program" class="absolute inset-0 w-full h-full object-cover opacity-60">
+              <div class="relative p-8 z-10 text-white bg-gradient-to-t from-black/80 to-transparent">
+                <span class="inline-block px-2.5 py-0.5 bg-brand-secondary text-white text-[10px] font-semibold rounded-full mb-2">Co-Leader</span>
+                <h3 class="text-xl sm:text-2xl font-bold mb-1">Knowledge Sharing</h3>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button id="carousel-prev" class="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 flex h-12 w-12 items-center justify-center text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="Previous slide">
+              <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.5 4.5 7 12l8.5 7.5V4.5z" />
+              </svg>
+            </button>
+
+            <button id="carousel-next" class="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 flex h-12 w-12 items-center justify-center text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="Next slide">
+              <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.5 4.5 17 12l-8.5 7.5V4.5z" />
+              </svg>
+            </button>
+
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-30">
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white" data-slide="0" aria-label="Slide 1"></button>
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/80" data-slide="1" aria-label="Slide 2"></button>
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/80" data-slide="2" aria-label="Slide 3"></button>
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/80" data-slide="1" aria-label="Slide 4"></button>
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/80" data-slide="2" aria-label="Slide 5"></button>
+                <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/80" data-slide="2" aria-label="Slide 6"></button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Fit to Page) -->
+  <section id="contact" class="py-12 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold">
+          <span class="text-outline">Atikah's</span> <span class="text-black">Contact</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-5xl mx-auto items-stretch">
+        <!-- Contact Form (Left) -->
+        <div class="lg:col-span-7 bg-brand-bg-card rounded-[40px] border border-brand-muted p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+          <form id="contact-form" class="space-y-4" action="mailto:atikahwulandri@gmail.com" method="post">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex flex-col">
+                <label for="first-name" class="text-xs font-semibold text-brand-secondary mb-1.5">First Name</label>
+                <input type="text" id="first-name" name="firstName" required class="px-3 py-2 bg-[#DBDBDB]/40 border border-transparent rounded-lg focus:border-brand-secondary focus:bg-white focus:outline-none transition-all text-xs font-medium text-black">
+              </div>
+              <div class="flex flex-col">
+                <label for="last-name" class="text-xs font-semibold text-brand-secondary mb-1.5">Last Name</label>
+                <input type="text" id="last-name" name="lastName" required class="px-3 py-2 bg-[#DBDBDB]/40 border border-transparent rounded-lg focus:border-brand-secondary focus:bg-white focus:outline-none transition-all text-xs font-medium text-black">
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="text-xs font-semibold text-brand-secondary mb-1.5">Email Address</label>
+              <input type="email" id="email" name="email" required class="px-3 py-2 bg-[#DBDBDB]/40 border border-transparent rounded-lg focus:border-brand-secondary focus:bg-white focus:outline-none transition-all text-xs font-medium text-black">
+            </div>
+            <div class="flex flex-col">
+              <label for="message" class="text-xs font-semibold text-brand-secondary mb-1.5">Message</label>
+              <textarea id="message" name="message" rows="4" required class="px-3 py-2 bg-[#DBDBDB]/40 border border-transparent rounded-lg focus:border-brand-secondary focus:bg-white focus:outline-none transition-all text-xs font-medium text-black resize-none"></textarea>
+            </div>
+            
+            <div class="flex justify-center pt-2">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-brand-secondary text-white text-xs font-semibold rounded-lg hover:bg-black transition-all duration-300 transform active:scale-95 shadow-md w-full sm:w-auto">
+                <span>Send</span>
+                <!-- White Send Icon via SVG -->
+                <svg class="w-3.5 h-3.5 text-white fill-current" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Social Badges (Right: centered compact cards) -->
+        <div class="lg:col-span-5 flex flex-col gap-6 items-center justify-center">
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/atikahwulandari" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-brand-bg-card rounded-[20px] border border-brand-muted px-3.5 py-3 hover:shadow-md transition-shadow duration-300 group w-full max-w-[432px] min-h-[86px]">
+            <div class="w-[62px] h-[62px] bg-white border border-[#5A5A5A]/50 rounded-lg flex items-center justify-center shrink-0 shadow-sm group-hover:border-black transition-colors">
+              <img src="/public/images/Linkedin.png" alt="LinkedIn" class="w-11 h-11 object-contain group-hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden">
+              <p class="text-base font-bold text-black leading-tight mb-3">Linkedin</p>
+              <p class="text-sm sm:text-base font-bold text-black group-hover:text-brand-secondary transition-colors truncate">atikahwulandari</p>
+            </div>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:atikahwulandri@gmail.com" class="flex items-center gap-3 bg-brand-bg-card rounded-[20px] border border-brand-muted px-3.5 py-3 hover:shadow-md transition-shadow duration-300 group w-full max-w-[432px] min-h-[86px]">
+            <div class="w-[62px] h-[62px] bg-white border border-[#5A5A5A]/50 rounded-lg flex items-center justify-center shrink-0 shadow-sm group-hover:border-black transition-colors">
+              <div class="w-[62px] h-[62px] bg-white border border-[#5A5A5A]/50 rounded-lg flex items-center justify-center shrink-0 shadow-sm group-hover:border-black transition-colors">
+              <img src="/public/images/gmail.jpg" alt="LinkedIn" class="w-11 h-11 object-contain group-hover:scale-105 transition-transform">
+            </div>
+            </div>
+            <div class="overflow-hidden">
+              <p class="text-base font-bold text-black leading-tight mb-3">Email</p>
+              <p class="text-sm sm:text-base font-bold text-black group-hover:text-brand-secondary transition-colors truncate">atikahwulandri@gmail.com</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 px-4 sm:px-6">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative transform scale-95 transition-transform duration-300 border border-gray-100 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <!-- Close Button -->
+      <button id="modal-close" class="absolute top-6 right-6 text-brand-muted hover:text-black focus:outline-none" aria-label="Close details">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+      
+      <div id="modal-content">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-8 right-8 z-50 bg-black text-white px-6 py-3 rounded-xl shadow-lg transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none text-sm font-semibold flex items-center gap-2">
+    <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <footer class="bg-brand-bg-card border-t border-gray-100 py-6 text-center text-xs font-semibold text-brand-muted">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>&copy; 2026 Atikah Wulan Dari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
