@@ -128,7 +128,7 @@ const projectData = {
   },
   salary: {
     title: "Salary Dashboard",
-    image: "/public/images/portfolio/2. Salary Dashboard.png",
+    image: "public/images/portfolio/2. Salary Dashboard.png",
     description: "Collected job market data from JobStreet using web scraping techniques and developed an interactive dashboard to analyze average salaries across industries and occupational categories in Indonesia.",
     details: "Built an end-to-end salary analytics solution by combining Python-based web scraping with Power BI. The dashboard uncovers compensation trends, industry benchmarks, and high-value career opportunities through interactive visual analytics.",
     metrics: ["300+ job professions analyzed", "20+ industries benchmarked", "Automated ETL pipeline using Python"],
@@ -136,7 +136,7 @@ const projectData = {
   },
   material: {
     title: "Material Price Dashboard",
-    image: "/public/images/portfolio/3. Material Price Dashboard.png",
+    image: "public/images/portfolio/3. Material Price Dashboard.png",
     description: "Developed a Business Intelligence dashboard that transforms batch data from the Ministry of Trade's SP2KP system into actionable insights for monitoring essential commodity price trends and market fluctuations.",
     details: "Developed an interactive commodity price intelligence dashboard using Power BI and Excel to monitor national and regional price movements. The solution uncovers price trends, volatility, and geographic disparities, enabling faster, data-driven decisions for market monitoring and economic analysis.",
     metrics: ["Price trend, volatility, and regional analysis", "National and regional commodity price monitoring", "Interactive Power BI dashboard for decision support"],
@@ -144,7 +144,7 @@ const projectData = {
   },
   weather: {
     title: "Weather Dashboard",
-    image: "/public/images/portfolio/4. Weather Dashboard.png",
+    image: "public/images/portfolio/4. Weather Dashboard.png",
     description: "Built an interactive weather analytics dashboard that visualizes current weather conditions and forecast data through seamless integration with the Weather API.",
     details: "Developed an interactive weather analytics platform that transforms Weather API data into actionable insights. The dashboard combines weather forecasts, air quality metrics, and environmental indicators to support real-time monitoring through intuitive visual analytics.",
     metrics: ["Multi-city forecast and environmental analysis", "Air quality and climate indicator monitoring", "Interactive analytics with dynamic filtering"],
@@ -152,7 +152,7 @@ const projectData = {
   },
   finance: {
     title: "Personal Financial Tracker",
-    image: "/public/images/portfolio/5. Financial Tracker Dashboard.png",
+    image: "public/images/portfolio/5. Financial Tracker Dashboard.png",
     description: "Developed an interactive financial management dashboard that enables users to track income, expenses, savings, and overall financial performance through real-time data input.",
     details: "Built an interactive financial dashboard in Microsoft Excel that delivers comprehensive insights into cash flow, budgeting, spending patterns, and savings performance for effective personal finance management.",
     metrics: ["Auto-Categorization", "Budget vs. actual performance tracking", "Cash flow and savings analysis"],
@@ -160,7 +160,7 @@ const projectData = {
   },
   college: {
     title: "College Fee Analysis",
-    image: "/public/images/portfolio/6. College Fee Classification.png",
+    image: "public/images/portfolio/6. College Fee Classification.png",
     description: "Developed a predictive classification model to support the determination of tuition fee categories for prospective students..",
     details: "Built a machine learning classification model in RapidMiner to predict student UKT categories based on household socioeconomic factors, enabling faster, fairer, and data-driven tuition fee assessment.",
     metrics: ["Student UKT classification using machine learning", "Decision support for tuition fee assessment"],
